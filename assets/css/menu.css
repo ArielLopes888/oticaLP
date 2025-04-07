@@ -9,7 +9,7 @@
   z-index: 1;
   display: none;
   border-bottom: 0.1rem solid var(--light-gray-color);
-  background-color: #1f949d;
+  background-color: #fc9c04;
 }
 
 .menu-content {
@@ -103,7 +103,7 @@
     top: 2rem;
     right: 2rem;
     background: var(--primary-color);
-    color: #000000;
+    color: #fc9c04;
     font-size: 3rem;
     line-height: 3rem;
     width: 3rem;

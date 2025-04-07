@@ -52,7 +52,7 @@ p {
 }
 
 .section-title span {
-	color: #1f949d;
+	color: #fc9c04;
 }
 
 .logo-container {
@@ -70,7 +70,7 @@ p {
 	padding: 10px 30px;
 	color: white;
 	background-color: transparent;
-	border: 2px solid #1f949d;
+	border: 2px solid #fc9c04;
 	font-size: 2rem;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
@@ -83,7 +83,7 @@ p {
 
 .cta:hover {
 	color: white;
-	background-color: #1f949d;
+	background-color: #fc9c04;
 	animation: none;
 	text-align: center;
 	/* Centraliza os textos */
@@ -176,50 +176,48 @@ p {
 }
 
 #header .nav-list ul li:hover a {
-	color: #1f949d;
+	color: #fc9c04;
 }
 
 /* End Header section */
 
 /* Hero Section */
-
 #hero {
 	background-attachment: fixed;
-	background-image: url(/assets/img/img.jpeg);
+	background-image: url(/assets/img/back.png);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
 	z-index: 1;
-}
-
-#hero::after {
+	padding-top: 10rem;
+  }
+  
+  #hero::after {
 	content: '';
 	position: absolute;
 	left: 0;
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-color:#340464;
-	/* opacity: 0.7; */
+	background-color: #3404644d;
 	z-index: -1;
-}
-
-#hero .hero {
+  }
+  
+  #hero .hero.container {
 	display: flex;
-	flex-direction: column;
-	/* Alinha os itens verticalmente */
-	justify-content: center;
-	/* Centraliza verticalmente */
 	align-items: center;
-	/* Centraliza horizontalmente */
+	justify-content: space-between;
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 50px;
 	height: 100vh;
-	/* Assegura que a altura seja a total da viewport */
-}
-
-#hero h1 {
+	gap: 30px;
+  }
+  
+  .hero-content {
+	flex: 1;
+  }
+  #hero h1 {
 	font-family: 'Baloo 2', cursive;
 	font-weight: 700;
 	display: block;
@@ -229,13 +227,9 @@ p {
 	color: transparent;
 	animation: text_reveal 0.5s ease forwards;
 	animation-delay: 0.8s;
-}
-
-#hero h1:nth-child(1) {
-	animation-delay: 0.8s;
-}
-
-#hero h1 span {
+  }
+  
+  #hero h1 span {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -244,26 +238,68 @@ p {
 	background-color: #340464;
 	animation: text_reveal_box 1.8s ease;
 	animation-delay: 0.5s;
-}
-
-#hero h1:nth-child(1) span {
+  }
+  #hero h2 span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 0;
+	background-color: #340464;
+	animation: text_reveal_box 1.8s ease;
 	animation-delay: 0.5s;
-}
-
-#hero h2 {
+  }
+  
+  #hero h2{
+	font-family: 'Baloo 2', cursive;
+	font-weight: 700;
 	display: block;
 	width: fit-content;
-	font-size: 3rem;
+	font-size: 2.5rem;
 	position: relative;
-	color: transparent;
-	animation: text_reveal_h2 0.6s ease forwards;
-	animation-delay: 1.5s;
-	justify-content: center;
-	text-align: center;
-	/* Centraliza os textos */
-}
+	color: #ffffff00;
+	animation: text_reveal 0.5s ease forwards;
+	animation-delay: 0.8s;
 
-.whatsapp-button {
+  }
+  .hero-image {
+	flex-shrink: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+  }
+  
+  .hero-image img {
+	height: 100%;
+	max-height: 100vh;
+	max-width: 400px;
+	object-fit: cover;
+	border-radius: 25px;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+	#hero .hero.container {
+	  flex-direction: column;
+	  justify-content: center;
+	  height: auto;
+	  padding: 40px 20px;
+	  text-align: center;
+	}
+  
+	.hero-content {
+	  margin-bottom: 30px;
+	}
+  
+	.hero-image img {
+	  max-width: 100%;
+	  height: auto;
+	}
+  }
+  
+  /* Mantendo exatamente o mesmo estilo do botão do WhatsApp */
+  .whatsapp-button {
 	position: fixed;
 	bottom: 20px;
 	right: 20px;
@@ -276,26 +312,24 @@ p {
 	align-items: center;
 	z-index: 1000;
 	animation: pulse 1.5s infinite ease-in-out !important;
-}
-
-.whatsapp-button img {
+  }
+  
+  .whatsapp-button img {
 	width: 35px;
 	height: 35px;
-}
-
-@keyframes pulse {
+  }
+  
+  @keyframes pulse {
 	0% {
-		transform: scale(0.8) !important;
+	  transform: scale(0.8) !important;
 	}
-
 	50% {
-		transform: scale(1.50) !important;
+	  transform: scale(1.50) !important;
 	}
-
 	100% {
-		transform: scale(0.8) !important;
+	  transform: scale(0.8) !important;
 	}
-}
+  }
 
 
 /* End Hero Section */
@@ -390,7 +424,7 @@ p {
 #cleanCar .cleanCar-top h2 {
 	margin-top: 100px;
 	font-size: 3rem;
-	color: rgb(0, 145, 173);
+	color: #fc9c04;
 }
 
 #cleanCar .cleanCar-bottom {
@@ -572,7 +606,7 @@ p {
 	top: 19px;
 	height: 98%;
 	width: 98%;
-	border: 7px solid #1f949d;
+	border: 7px solid #fc9c04;
 	z-index: -1;
 }
 
@@ -846,26 +880,6 @@ p {
 	opacity: 1;
 }
 
-/* Conteúdo do popup */
-.popup-content {
-	background-image: url(/assets/img/carro-limpo.jpg);
-	background-size: cover;
-	background-position: top center;
-	padding: 20px;
-	width: 350px;
-	/* Largura aumentada */
-	max-width: 90%;
-	height: 400px;
-	max-height: 90%;
-	border-radius: 8px;
-	text-align: center;
-	overflow-y: auto;
-	border: 2px solid #00ffff;
-	box-shadow: 0 0 15px #00ffff, 0 0 30px #00ffff, 0 0 45px #00ffff;
-	position: relative;
-	font-family: 'Baloo 2', cursive;
-}
-
 /* Botão de fechar */
 .close-btn {
 	position: absolute;
@@ -891,11 +905,11 @@ p {
 .button {
 	display: inline-block;
 	padding: 10px 20px;
-	background-color: #00ffff83;
+	background-color: #fc9c04;
 	color: #fff;
 	text-decoration: none;
 	border-radius: 5px;
-	border: 2px solid #00ffff83;
+	border: 2px solid #fc9c04;
 	box-shadow: 0 0 10px #00ffff83, 0 0 20px #00ffffab, 0 0 30px #00ffffa6;
 	transition: all 0.3s ease-in-out;
 	font-size: 1.4rem;
@@ -939,7 +953,7 @@ p {
 	/* Espaçamento interno */
 	background: #cccccc;
 	/* Cor de fundo */
-	border-top: 5px solid #00ffff;
+	border-top: 5px solid #fc9c04;
 	/* Linha superior azul */
 	max-width: 100%;
 	/* Garantir que não ultrapasse 100% da largura */
@@ -975,7 +989,7 @@ p {
 .count {
 	font-size: 3em;
 	/* Tamanho do número aumentado */
-	color: #00ffff;
+	color: #fc9c04;
 	/* Cor azul para o número */
 	margin: 0;
 	font-weight: bold;
@@ -1024,7 +1038,7 @@ p {
 
 @keyframes pulse {
 	0% {
-		border-color: #1f949d;
+		border-color: #fc9c04;
 		/* Cor inicial */
 	}
 
@@ -1034,7 +1048,7 @@ p {
 	}
 
 	100% {
-		border-color: #1f949d;
+		border-color: #fc9c04;
 		/* Cor final */
 	}
 }
@@ -1053,19 +1067,19 @@ p {
 
 @keyframes text_reveal {
 	100% {
-		color: #1f949d;
+		color: #fc9c04;
 	}
 }
 
 @keyframes text_reveal_h2 {
 	100% {
-		color: #1f949d;
+		color: #fc9c04;
 	}
 }
 
 @keyframes text_reveal_name {
 	100% {
-		color: #1f949d;
+		color: #fc9c04;
 		font-weight: 500;
 	}
 }
@@ -1086,6 +1100,9 @@ p {
 	/* Hero */
 	#hero h1 {
 		font-size: 6.5rem;
+	}
+	#hero h2 {
+		font-size: 4.0rem;
 	}
 
 	/* End Hero */
@@ -1151,7 +1168,7 @@ p {
 		top: 34px;
 		height: 98%;
 		width: 98%;
-		border: 10px solid #1f949d;
+		border: 10px solid #fc9c04;
 	}
 
 	#about .col-right {
