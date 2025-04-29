@@ -969,6 +969,66 @@ p {
 	}
 }
 
+/* Marcas Section*/
+
+.marcas {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 50px 20px;
+	background: #cccccc;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+.marca {
+	text-align: center;
+	background: #fff;
+	border-radius: 15px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+	padding: 30px;
+	margin: 10px 0;
+	width: 90%;
+	/* Largura padrão para telas pequenas, menor para evitar ultrapassagem */
+	max-width: 300px;
+	/* Largura máxima para os contadores */
+	transition: transform 0.3s;
+}
+
+.marca:hover {
+	transform: translateY(-5px);
+}
+
+p {
+	font-family: 'Poppins', sans-serif;
+	margin-top: 10px;
+	font-size: 1.2em;
+	color: #666;
+}
+
+/* Media Queries para telas maiores */
+@media (min-width: 768px) {
+	.marcas {
+		flex-direction: row;
+		/* Alinha em linha para telas maiores */
+		justify-content: space-around;
+		/* Espaço entre os contadores */
+	}
+
+	.marca {
+		width: 13%;
+		/* Largura menor para telas maiores */
+		max-width: none;
+		/* Remove a largura máxima em telas maiores */
+	}
+
+	p {
+		font-size: 1.5em;
+		/* Aumenta o tamanho do texto em telas maiores */
+	}
+}
+/* End Marcas Section*/
 
 
 @keyframes pulse {
@@ -1018,7 +1078,6 @@ p {
 		font-weight: 500;
 	}
 }
-
 /* End Keyframes */
 
 /* Media Query For Tablet */
