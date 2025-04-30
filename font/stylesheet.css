@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'MADE TOMMY Outline';
+    src: url('MADETOMMYOutline.woff2') format('woff2'),
+        url('MADETOMMYOutline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE TOMMY';
+    src: url('MADETOMMY.woff2') format('woff2'),
+        url('MADETOMMY.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap');
-
 
 * {
 	padding: 0;
@@ -7,9 +5,17 @@
 	box-sizing: border-box;
 }
 
+@font-face {
+	font-family: 'Made Tommy';
+	src: url('../../font/MADETOMMY.woff2') format('woff2'),
+		 url('../../font/MADETOMMY.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+  }
+
 html {
 	font-size: 10px;
-	font-family: 'Baloo 2', cursive;
+	font-family: 'Made Tommy', sans-serif;
 
 }
 
@@ -41,10 +47,20 @@ p {
 }
 
 .section-title {
-	font-family: 'Baloo 2', cursive;
+	font-family: 'Made Tommy', sans-serif;
 	font-size: 4rem;
 	font-weight: 300;
 	color: black;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	text-align: center;
+}
+.section-title2 {
+	font-family: 'Made Tommy', sans-serif;
+	font-size: 4rem;
+	font-weight: 300;
+	color: white;
 	margin-bottom: 10px;
 	text-transform: uppercase;
 	letter-spacing: 0.2rem;
@@ -234,7 +250,7 @@ p {
 }
 
 #hero h1 {
-	font-family: 'Baloo 2', cursive;
+	font-family: 'Made Tommy', sans-serif;
 	font-weight: 700;
 	display: block;
 	width: fit-content;
@@ -259,7 +275,7 @@ p {
 }
 
 #hero h2 {
-	font-family: 'Baloo 2', cursive;
+	font-family: 'Made Tommy', sans-serif;
 	font-weight: 700;
 	display: block;
 	width: fit-content;
@@ -691,7 +707,6 @@ p {
 #feedbacks .feedbacks-img img {
 	transition: 0.3s ease transform;
 	width: 100%;
-	/* Garante que a imagem não ultrapasse os limites laterais */
 }
 
 #feedbacks .feedbacks-item:hover .feedbacks-img img {
@@ -932,7 +947,7 @@ p {
 }
 
 p {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Made Tommy', sans-serif;
 	/* Fonte personalizada */
 	margin-top: 10px;
 	/* Margem acima do texto */
@@ -977,7 +992,7 @@ p {
 	justify-content: center;
 	align-items: center;
 	padding: 50px 20px;
-	background: #cccccc;
+	background: #fc9c04;
 	max-width: 100%;
 	box-sizing: border-box;
 }
@@ -1001,7 +1016,7 @@ p {
 }
 
 p {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Made Tommy', sans-serif;
 	margin-top: 10px;
 	font-size: 1.2em;
 	color: #666;
