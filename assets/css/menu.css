@@ -92,6 +92,7 @@
 
 .close-menu:checked~.close-menu-label::after {
   content: '×';
+  color: #340464;
 }
 
 
